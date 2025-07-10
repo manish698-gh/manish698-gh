@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <title>My Home Page</title>
   <meta name="author" content="manish698" />
@@ -46,29 +47,18 @@
         His journey reflects talent, resilience, and determination to succeed.
       </p>
 
-      <!-- Responsive image of myself -->
-      <section id="thumbnail-and-alternative-sizes">
-        <a href="images/myself.png">
-          <picture>
-            <source media="(max-width: 500px)" srcset="images/thumbnail-150.png" />
-            <source media="(min-width: 501px)" srcset="images/thumbnail-300.png" />
-            <img src="images/thumbnail-300.png" alt="Photo of myself" />
-          </picture>
-        </a>
-      </section>
+
+      <!-- Close the bio section first -->
     </section>
 
-    <!-- Favourite Things Section -->
-    <section id="my-favourite-things">
+    <!-- Start a new section for Favourite Things -->
+    <section id="favourites">
       <h2>My Favourite Things</h2>
 
-      <!-- Linked image wrapped in figure with caption -->
-      <figure>
-        <a href="https://en.wikipedia.org/wiki/Sandeep_Lamichhane" target="_blank" rel="noopener noreferrer">
-          <img src="images/logo.png" alt="Photo of Sandeep Lamichhane, Nepalese cricketer" style="width: 150px; height: auto;" />
-        </a>
-        <figcaption>Sandeep Lamichhane – Nepal's cricket sensation</figcaption>
-      </figure>
+      <!-- Linked image -->
+      <a href="https://en.wikipedia.org/wiki/Sandeep_Lamichhane" target="_blank" rel="noopener noreferrer">
+        <img src="images/logo.png" alt="Photo of Sandeep Lamichhane, Nepalese cricketer" style="width: 150px; height: auto;" />
+      </a>
 
       <!-- Ordered list of favourite things -->
       <ol>
@@ -76,10 +66,8 @@
         <li>Playing Cricket and Football</li>
         <li>Singing and Listening Songs</li>
       </ol>
-    </section>
 
-    <!-- Haiku -->
-    <section id="haiku">
+      <!-- Haiku -->
       <h3>Haiku</h3>
       <p>
         Practice every day<br />
@@ -89,30 +77,8 @@
         <span class="author">– Sachin Tendulkar</span>
       </p>
     </section>
-
-    <!-- Embedding External Content -->
-    <section id="embedding-external-content">
-      <h3>Public Domain Audiobook</h3>
-      <audio controls>
-        <source src="https://dn721507.ca.archive.org/0/items/booksandreading_2505_librivox/booksandreading_09_porter_128kb.mp3" type="audio/mpeg" />
-        <p>Your browser doesn't support audio.
-          <a href="https://dn721507.ca.archive.org/0/items/booksandreading_2505_librivox/booksandreading_09_porter_128kb.mp3">Download the audiobook</a>.
-        </p>
-      </audio>
-
-      <h3>YouTube Video</h3>
-      <iframe width="560" height="315"
-              src="https://www.youtube.com/embed/j61j9X4xCnA"
-              title="Visit Nepal - Lifetime Experience"
-
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-      </iframe>
-
-    </section>
   </main>
-
-  <!-- Footer Section with SC Logo -->
+    <!-- Footer Section -->
   <footer>
     <hr />
     <blockquote>
@@ -124,18 +90,6 @@
       &copy; 2025
       <a href="mailto:ghimiremanish812@gmail.com?subject=Message%20from%20CSD112%20Website">Manish Ghimire</a>
     </p>
-
-    <!-- SC Logo Section -->
-    <section>
-      <picture>
-        <source srcset="images/sc-logo/sc-logo.svg" type="image/svg+xml" />
-        <img
-                src="images/sc-logo/sc-logo.png"
-                width="70"
-                alt="Sault College Logo"
-        />
-      </picture>
-    </section>
   </footer>
 
   <!-- Back to top link -->

@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="manish698-gh">
-    <title>Manish's CSD-122 Lab-1</title>
+
+  <meta charset="UTF-8" />
+  <title>My Home Page</title>
+  <meta name="author" content="manish698" />
+  <meta name="description" content="Lab 2 – HTML and JavaScript Assignment for CSD112." />
+
+  <!-- Favicon links -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
-    <p>manish698-gh</p>
+<div class="width-wrap core">
 
+  <!-- Header with nav -->
+  <header id="top">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bio Section -->
+    <section id="bio">
+      <h1>Welcome to Manish's Website</h1>
+
+      <p>
+        Sandeep Lamichhane is a talented leg-spin bowler from Nepal.
+        Born in 2000, he quickly rose to fame playing for Nepal’s national team.
+        He became the <em>first Nepalese player</em> in the Indian Premier League (IPL).
+        He holds two world records for becoming the fastest bowler to take 100 wickets in T20 and ODI formats.
+        His skill shines in international matches and various T20 leagues worldwide.
+      </p>
+      <p>
+        Off the field, Sandeep is also known for his passion for music.
+        Though he faced serious legal challenges, his conviction was overturned.
+        He remains a key figure in Nepalese cricket, inspiring many young players.
+        His journey reflects talent, resilience, and determination to succeed.
+      </p>
+
+
+      <!-- Close the bio section first -->
+    </section>
+
+    <!-- Start a new section for Favourite Things -->
+    <section id="favourites">
+      <h2>My Favourite Things</h2>
+
+      <!-- Linked image -->
+      <a href="https://en.wikipedia.org/wiki/Sandeep_Lamichhane" target="_blank" rel="noopener noreferrer">
+        <img src="images/logo.png" alt="Photo of Sandeep Lamichhane, Nepalese cricketer" style="width: 150px; height: auto;" />
+      </a>
+
+      <!-- Ordered list of favourite things -->
+      <ol>
+        <li>Travelling</li>
+        <li>Playing Cricket and Football</li>
+        <li>Singing and Listening Songs</li>
+      </ol>
+
+      <!-- Haiku -->
+      <h3>Haiku</h3>
+      <p>
+        Practice every day<br />
+        Chase dreams like runs on the pitch<br />
+        Greatness will follow<br />
+        <br />
+        <span class="author">– Sachin Tendulkar</span>
+      </p>
+    </section>
+  </main>
+    <!-- Footer Section -->
+  <footer>
+    <hr />
+    <blockquote>
+      "Success is not final, failure is not fatal: it is the courage to continue that counts."
+      <cite> &mdash; <span class="author">Winston Churchill</span></cite>
+    </blockquote>
+
+    <p>
+      &copy; 2025
+      <a href="mailto:ghimiremanish812@gmail.com?subject=Message%20from%20CSD112%20Website">Manish Ghimire</a>
+    </p>
+  </footer>
+
+  <!-- Back to top link -->
+  <a href="#top" title="Back to top" class="back-to-top" aria-label="Back to top">◤</a>
+
+</div>
 </body>
 </html>

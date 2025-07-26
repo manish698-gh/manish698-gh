@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Home Page</title>
   <meta name="author" content="manish698" />
   <meta name="description" content="Lab 2 – HTML and JavaScript Assignment for CSD112." />
@@ -13,7 +13,11 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+
 </head>
+
 <body>
 <div class="width-wrap core">
 
@@ -32,7 +36,6 @@
     <!-- Bio Section -->
     <section id="bio">
       <h1>Welcome to Manish's Website</h1>
-
       <p>
         Sandeep Lamichhane is a talented leg-spin bowler from Nepal.
         Born in 2000, he quickly rose to fame playing for Nepal’s national team.
@@ -46,21 +49,33 @@
         He remains a key figure in Nepalese cricket, inspiring many young players.
         His journey reflects talent, resilience, and determination to succeed.
       </p>
-
-
-      <!-- Close the bio section first -->
     </section>
 
-    <!-- Start a new section for Favourite Things -->
+    <!-- Responsive Profile Image -->
+    <section id="thumbnail">
+      <h2>Profile Image</h2>
+      <a href="images/myself.png" target="_blank">
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/thumbnail-150.png" />
+          <source media="(max-width: 800px)" srcset="images/thumbnail-300.png" />
+          <img src="images/thumbnail-300.png" alt="Sandeep Lamichhane thumbnail" />
+        </picture>
+      </a>
+    </section>
+
+    <!-- Favourite Things Section -->
     <section id="favourites">
       <h2>My Favourite Things</h2>
 
-      <!-- Linked image -->
-      <a href="https://en.wikipedia.org/wiki/Sandeep_Lamichhane" target="_blank" rel="noopener noreferrer">
-        <img src="images/logo.png" alt="Photo of Sandeep Lamichhane, Nepalese cricketer" style="width: 150px; height: auto;" />
-      </a>
+      <!-- Figure for Image + Caption -->
+      <figure>
+        <a href="https://en.wikipedia.org/wiki/Sandeep_Lamichhane" target="_blank" rel="noopener noreferrer">
+          <img src="images/logo.png" alt="Photo of Sandeep Lamichhane, Nepalese cricketer" style="width: 150px; height: auto;" />
+        </a>
+        <figcaption><i>Sandeep Lamichhane, Nepalese cricketer</i></figcaption>
+      </figure>
 
-      <!-- Ordered list of favourite things -->
+      <!-- Ordered List -->
       <ol>
         <li>Travelling</li>
         <li>Playing Cricket and Football</li>
@@ -72,25 +87,28 @@
       <p>
         Practice every day<br />
         Chase dreams like runs on the pitch<br />
-        Greatness will follow<br />
-        <br />
+        Greatness will follow<br /><br />
         <span class="author">– Sachin Tendulkar</span>
       </p>
     </section>
 
-    <!-- Table Section for Lab 4 -->
-    <div id="making-a-table">
+    <!-- Table Section -->
+    <section id="making-a-table">
+      <h2>My Current Courses</h2>
       <table>
         <caption>Table 1. Current Courses</caption>
         <thead>
         <tr>
+          <th scope="col">Terms</th>
           <th scope="col">Course Code</th>
           <th scope="col">Course Title</th>
           <th scope="col">Credit Hours</th>
         </tr>
         </thead>
         <tbody>
+        <!-- Fall Semester -->
         <tr>
+          <th scope="rowgroup" rowspan="3">Fall</th>
           <th scope="row">CSA103</th>
           <td>Business Applications I</td>
           <td>4</td>
@@ -105,7 +123,9 @@
           <td>Programming Concepts I</td>
           <td>4</td>
         </tr>
+
         <tr>
+          <th scope="rowgroup" rowspan="6">Winter</th>
           <th scope="row">CSD123</th>
           <td>Databases I</td>
           <td>4</td>
@@ -115,23 +135,59 @@
           <td>Emerging Technology</td>
           <td>3</td>
         </tr>
+        <!-- Winter Semester -->
         <tr>
           <th scope="row">CSD124</th>
           <td>System Analysis and Design</td>
           <td>3</td>
         </tr>
+        <tr>
+          <th scope="row">COM101</th>
+          <td>Communications I</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th scope="row">CSD122</th>
+          <td>Programming Concepts II</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <th scope="row">CSD110</th>
+          <td>Computer Networking</td>
+          <td>3</td>
+        </tr>
         </tbody>
         <tfoot>
         <tr>
-          <td colspan="2"><strong>Total Credit Hours</strong></td>
-          <td><strong>22</strong></td>
+          <th scope="col" colspan="3">Total</th>
+          <th align="left">37</th>
         </tr>
         </tfoot>
-      </table>
-    </div>
 
+      </table>
+    </section>
+
+    <!-- Media Embed Section -->
+    <section id="media-embed">
+      <h2>Media Section</h2>
+
+      <h3>Public Domain Audiobook</h3>
+      <audio controls>
+        <source src="https://dn721507.ca.archive.org/0/items/historyofthemiddleages_2507_librivox/historyofthemiddleages_01_munro_128kb.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>About Nepal Video</h3>
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/BVWMO6XDjpo?si=vTDZVKyJcl4o5Jd5"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    </section>
   </main>
-    <!-- Footer Section -->
+
+  <!-- Footer -->
   <footer>
     <hr />
     <blockquote>
@@ -143,9 +199,22 @@
       &copy; 2025
       <a href="mailto:ghimiremanish812@gmail.com?subject=Message%20from%20CSD112%20Website">Manish Ghimire</a>
     </p>
+
+    <!-- Logo with srcset -->
+    <section id="Working-with-Image-Support">
+      <picture>
+        <source srcset="images/sc-logo/sc-logo.svg" />
+        <img src="images/sc-logo/sc-logo.svg"
+             srcset="images/sc-logo/sc-logo.png 1x,
+                       images/sc-logo/sc-logo_105.png 1.5x,
+                       images/sc-logo/sc-logo_140.png 2x"
+             alt="logo"
+             width="70" />
+      </picture>
+    </section>
   </footer>
 
-  <!-- Back to top link -->
+  <!-- Back to top -->
   <a href="#top" title="Back to top" class="back-to-top" aria-label="Back to top">◤</a>
 
 </div>

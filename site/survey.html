@@ -2,16 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Useful Links</title>
+    <title>Survey</title>
     <meta name="author" content="manish698" />
-    <meta name="description" content="Useful links for web development and Lab 2." />
+    <meta name="description" content="Survey Form for Lab 4 - CSD112" />
+
+    <!-- Favicon links -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
 
 </head>
 <body>
-<div class="width-wrap">
+<div class="width-wrap core">
 
     <!-- Header with nav -->
     <header id="top">
@@ -25,39 +31,44 @@
     </header>
 
     <main>
-        <h1>Useful Links</h1>
-        <ul>
-            <li><a href="https://validator.w3.org/" target="_blank" title="HTML Validator">HTML Validator</a></li>
-            <li><a href="https://realfavicongenerator.net/" target="_blank" title="Favicon Generator">Favicon Generator</a></li>
-        </ul>
+        <div id="creating-a-web-form">
+            <h1>Survey</h1>
+
+        </div>
+
+        <!-- JavaScript  inserts the form -->
+        <script src="scripts/survey.js"></script>
     </main>
 
+
+    <!-- Footer Section -->
     <footer>
         <hr />
         <blockquote>
             "Success is not final, failure is not fatal: it is the courage to continue that counts."
             <cite> &mdash; <span class="author">Winston Churchill</span></cite>
         </blockquote>
+
         <p>
             &copy; 2025
             <a href="mailto:ghimiremanish812@gmail.com?subject=Message%20from%20CSD112%20Website">Manish Ghimire</a>
         </p>
 
-        <!-- Logo with srcset -->
-        <section id="Working-with-Image-Support">
-            <picture>
-                <source srcset="images/sc-logo/sc-logo.svg" />
-                <img src="images/sc-logo/sc-logo.svg"
-                     srcset="images/sc-logo/sc-logo.png 1x,
+    <!-- Logo with srcset -->
+    <section id="Working-with-Image-Support">
+        <picture>
+            <source srcset="images/sc-logo/sc-logo.svg" />
+            <img src="images/sc-logo/sc-logo.svg"
+                 srcset="images/sc-logo/sc-logo.png 1x,
                        images/sc-logo/sc-logo_105.png 1.5x,
                        images/sc-logo/sc-logo_140.png 2x"
-                     alt="logo"
-                     width="70" />
-            </picture>
-            </section>
+                 alt="logo"
+                 width="70" />
+        </picture>
+    </section>
     </footer>
 
-
+    <!-- Back to top link -->
     <a href="#top" title="Back to top" class="back-to-top" aria-label="Back to top">◤</a>
 </div>
 </body>

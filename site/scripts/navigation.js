@@ -3,10 +3,10 @@
 // Create <nav> element
 const nav = document.createElement("nav");
 
-// Create <ul> for nav items
+
 const navList = document.createElement("ul");
 
-// Navigation items as [text, href] pairs
+// Navigation items
 const navItems = [
     ["Home", "index.html"],
     ["Links", "links.html"],

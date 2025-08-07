@@ -13,13 +13,13 @@ const courses = [
     { term: "Winter", code: "CSD110", title: "Computer Networking", credit: 3 },
 ];
 
-// Create table elements
+
 const table = document.createElement("table");
 const caption = document.createElement("caption");
 caption.textContent = "Table 1. Current Courses";
 table.appendChild(caption);
 
-// Create table header
+
 const thead = document.createElement("thead");
 thead.innerHTML = `
   <tr>

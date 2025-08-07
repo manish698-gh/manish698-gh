@@ -34,61 +34,12 @@
         <div id="creating-a-web-form">
             <h1>Survey</h1>
 
-            <form action="https://formspree.io/f/mdkzgbno" method="post">
-
-                <p>
-                    <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
-                    <input type="text" id="name_field" name="name_field" required />
-                </p>
-
-                <p>
-                    <label for="email_field">What is your email? <abbr title="required" aria-label="required">*</abbr></label>
-                    <input type="email" id="email_field" name="email_field" required />
-                </p>
-
-                <p>
-                    <label for="best_whole_number">Which whole number is best?</label>
-                    <input type="number" id="best_whole_number" name="best_whole_number" min="0" step="1" />
-                </p>
-
-                <p>
-                    <label for="best_day">Which day is best?</label>
-                    <input type="date" id="best_day" name="best_day" />
-                </p>
-
-                <p>
-                    <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
-                    <select id="best_bear" name="best_bear" required>
-                        <option value="" selected>&nbsp;</option>
-                        <option value="black">Black</option>
-                        <option value="brown">Brown</option>
-                        <option value="care">Care</option>
-                        <option value="panda">Panda</option>
-                        <option value="polar">Polar</option>
-                        <option value="teddy">Teddy</option>
-                    </select>
-                </p>
-
-                <fieldset>
-                    <legend>Do you like radio buttons?</legend>
-                    <ul>
-                        <li><label><input type="radio" name="enjoys_radio_buttons" value="yes"> Yes</label></li>
-                        <li><label><input type="radio" name="enjoys_radio_buttons" value="no"> No</label></li>
-                        <li><label><input type="radio" name="enjoys_radio_buttons" value="?" checked> None of your business</label></li>
-                    </ul>
-                </fieldset>
-
-                <p>
-                    <label for="life_meaning">What is the meaning of life?</label><br />
-                    <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
-                </p>
-
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
         </div>
+
+        <!-- JavaScript  inserts the form -->
+        <script src="scripts/survey.js"></script>
     </main>
+
 
     <!-- Footer Section -->
     <footer>
@@ -102,6 +53,19 @@
             &copy; 2025
             <a href="mailto:ghimiremanish812@gmail.com?subject=Message%20from%20CSD112%20Website">Manish Ghimire</a>
         </p>
+
+    <!-- Logo with srcset -->
+    <section id="Working-with-Image-Support">
+        <picture>
+            <source srcset="images/sc-logo/sc-logo.svg" />
+            <img src="images/sc-logo/sc-logo.svg"
+                 srcset="images/sc-logo/sc-logo.png 1x,
+                       images/sc-logo/sc-logo_105.png 1.5x,
+                       images/sc-logo/sc-logo_140.png 2x"
+                 alt="logo"
+                 width="70" />
+        </picture>
+    </section>
     </footer>
 
     <!-- Back to top link -->

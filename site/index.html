@@ -21,15 +21,10 @@
 <body>
 <div class="width-wrap core">
 
-  <!-- Header with nav -->
+  <!-- Header with dynamic nav -->
   <header id="top">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="links.html">Links</a></li>
-        <li><a href="glossary.html">Glossary</a></li>
-      </ul>
-    </nav>
+    <!-- Navigation dynamically generated -->
+    <script src="scripts/navigation.js"></script>
   </header>
 
   <main>
@@ -92,80 +87,13 @@
       </p>
     </section>
 
-    <!-- Table Section -->
+    <!-- Table Section (dynamic) -->
     <section id="making-a-table">
       <h2>My Current Courses</h2>
-      <table>
-        <caption>Table 1. Current Courses</caption>
-        <thead>
-        <tr>
-          <th scope="col">Terms</th>
-          <th scope="col">Course Code</th>
-          <th scope="col">Course Title</th>
-          <th scope="col">Credit Hours</th>
-        </tr>
-        </thead>
-        <tbody>
-        <!-- Fall Semester -->
-        <tr>
-          <th scope="rowgroup" rowspan="3">Fall</th>
-          <th scope="row">CSA103</th>
-          <td>Business Applications I</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <th scope="row">CSD112</th>
-          <td>Introduction to Web Development</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <th scope="row">CSD121</th>
-          <td>Programming Concepts I</td>
-          <td>4</td>
-        </tr>
-
-        <tr>
-          <th scope="rowgroup" rowspan="6">Winter</th>
-          <th scope="row">CSD123</th>
-          <td>Databases I</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <th scope="row">CSD125</th>
-          <td>Emerging Technology</td>
-          <td>3</td>
-        </tr>
-        <!-- Winter Semester -->
-        <tr>
-          <th scope="row">CSD124</th>
-          <td>System Analysis and Design</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <th scope="row">COM101</th>
-          <td>Communications I</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <th scope="row">CSD122</th>
-          <td>Programming Concepts II</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <th scope="row">CSD110</th>
-          <td>Computer Networking</td>
-          <td>3</td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-          <th scope="col" colspan="3">Total</th>
-          <th align="left">37</th>
-        </tr>
-        </tfoot>
-
-      </table>
+      <script src="scripts/timetable.js"></script>
     </section>
+
+
 
     <!-- Media Embed Section -->
     <section id="media-embed">
@@ -200,6 +128,8 @@
       <a href="mailto:ghimiremanish812@gmail.com?subject=Message%20from%20CSD112%20Website">Manish Ghimire</a>
     </p>
 
+
+
     <!-- Logo with srcset -->
     <section id="Working-with-Image-Support">
       <picture>
@@ -213,6 +143,7 @@
       </picture>
     </section>
   </footer>
+
 
   <!-- Back to top -->
   <a href="#top" title="Back to top" class="back-to-top" aria-label="Back to top">◤</a>
